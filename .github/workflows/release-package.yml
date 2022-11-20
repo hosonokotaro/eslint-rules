@@ -13,7 +13,10 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
+          resistry-url: https://npm.pkg.github.com/
       - run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.PRIVATE_TOKEN}}
       - run: npm test
 
   publish-gpr:
