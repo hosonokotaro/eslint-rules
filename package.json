@@ -1,5 +1,5 @@
 {
-  "name": "eslint-rules",
+  "name": "@hosonokotaro/eslint-rules",
   "version": "0.1.0",
   "description": "",
   "main": "index.json",
