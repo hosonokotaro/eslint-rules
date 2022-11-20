@@ -1,0 +1,36 @@
+{
+  "name": "eslint-rules",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.json",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint './src/*.{ts,tsx}' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hosonokotaro/eslint-rules.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hosonokotaro/eslint-rules/issues"
+  },
+  "homepage": "https://github.com/hosonokotaro/eslint-rules#readme",
+  "publishConfig": {
+    "@hosonokotaro:registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "@hosonokotaro/prettier-format": "^0.1.7",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  },
+  "prettier": "@hosonokotaro/prettier-format"
+}
