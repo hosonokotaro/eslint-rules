@@ -1,6 +1,6 @@
 {
   "name": "@hosonokotaro/eslint-rules",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "index.json",
   "scripts": {
@@ -21,6 +21,7 @@
     "@hosonokotaro:registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
+    "@hosonokotaro/prettier-format": "^0.1.7",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",
     "eslint": "^8.28.0",
@@ -30,5 +31,6 @@
     "eslint-plugin-simple-import-sort": "^8.0.0",
     "prettier": "^2.7.1",
     "typescript": "^4.8.4"
-  }
+  },
+  "prettier": "@hosonokotaro/prettier-format"
 }

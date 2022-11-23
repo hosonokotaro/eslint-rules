@@ -13,7 +13,11 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@hosonokotaro'
       - run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - run: npm test
 
   publish-gpr:
@@ -29,7 +33,10 @@ jobs:
           node-version: 18
           cache: 'npm'
           registry-url: https://npm.pkg.github.com/
+          scope: '@hosonokotaro'
       - run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
